@@ -4,7 +4,8 @@ import axios from "axios";
 
 const app = express();
 const port = 3000;
-const API_KEY = "784b8e8e19bc8ba8ac41e6b4d7542228";
+// former key = "784b8e8e19bc8ba8ac41e6b4d7542228"
+const API_KEY = "c263c1e04603e1c25145de591bc6c386";
 
 app.use(express.urlencoded({extended:true}));
 app.use(express.static("public"));
@@ -19,7 +20,7 @@ app.get("/", (req,res)=>{
 app.post("/submit", async(req,res)=> {
     try{
     const city = req.body.location;
-   const response = await axios.get(`https://api.weatherstack.com/current?access_key=784b8e8e19bc8ba8ac41e6b4d7542228&query=${city}`);
+   const response = await axios.get(`https://api.weatherstack.com/current?access_key=c263c1e04603e1c25145de591bc6c386&query=${city}`);
     console.log(response);
    const result = response.data; 
     res.render("index.ejs",{

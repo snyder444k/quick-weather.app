@@ -2,6 +2,15 @@
 :root {
     --var-bright: white;
     --var-blue: #5003C0;
+    --var-dark:black;
+    --var-darker:black;
+}
+
+.dark-theme {
+  --var-bright: black;
+  --var-blue: white;
+  --var-dark: white;
+  --var-darker: red;
 }
 
 *::before,*::after,*{
@@ -19,6 +28,10 @@ body {
     background-color: var(--var-bright);
 
 }
+
+#icon {
+  color: var(--var-bright);
+}
    
  header {
     background-color: var(--var-blue);
@@ -33,7 +46,7 @@ body {
  }
 
  header p {
-    color: white;
+    color: var(--var-bright);
     font-weight: 600;
  }
 
@@ -46,6 +59,7 @@ body {
  .intro {
     font-family: "montserrat";
     font-size: clamp(2.3rem,5vw,5rem);
+    color: var(--var-dark);
  }
 
  .service {
@@ -70,8 +84,8 @@ body {
    padding: .5em .7em;
    font-size: clamp(.8rem,4.5vw,1.4rem);
    font-weight: bold;
-   color: white;
-   background-color: #5003C0;
+   color: var(--var-bright);
+   background-color: var(--var-blue);
    border: none;
    font-family: "montserrat";
    border-radius: 5px;
@@ -117,12 +131,13 @@ body {
  .param {
    font-size: 1.1rem;
    font-weight: 700;
-   color: #5003C0;
+   color: var(--var-blue);
  }
 
  .answer {
    font-weight: 600;
    font-size: 1.2rem;
+   color: var(--var-darker);
  }
 
  .second {
@@ -133,7 +148,7 @@ body {
 
  .data {
   margin-top:40px;
-
+ color: var(--var-dark);
  }
 
 
@@ -154,7 +169,7 @@ body {
  }
 
  header p {
-    color: white;
+    color: var(--var-bright);
     font-weight: 600;
  }
 
@@ -167,6 +182,7 @@ body {
  .intro {
     font-family: "montserrat";
     font-size: clamp(2.3rem,5vw,5rem);
+    color: var(--var-dark);
  }
 
  .service {
@@ -191,8 +207,8 @@ body {
    padding: .5em .7em;
    font-size: clamp(.8rem,4.5vw,1.4rem);
    font-weight: bold;
-   color: white;
-   background-color: #5003C0;
+   color: var(--var-bright);
+   background-color: var(--var-blue);
    border: none;
    font-family: "montserrat";
    border-radius: 5px;
@@ -239,7 +255,7 @@ body {
  .param {
    font-size: 1.1rem;
    font-weight: 700;
-   color: #5003C0;
+   color: var(--var-blue);
  }
 
  .answer {
@@ -255,7 +271,7 @@ body {
 
  .data {
   margin-top:40px;
-
+ color: var(--var-dark);
  }
 
 }
@@ -277,7 +293,7 @@ body {
  }
 
  header p {
-    color: white;
+    color: var(--var-bright);
     font-weight: 600;
  }
 
@@ -290,6 +306,7 @@ body {
  .intro {
     font-family: "montserrat";
     font-size: clamp(2.3rem,5vw,5rem);
+    color: var(--var-dark);
  }
 
  .service {
@@ -314,8 +331,8 @@ body {
    padding: .5em .7em;
    font-size: clamp(.8rem,4.5vw,1.4rem);
    font-weight: bold;
-   color: white;
-   background-color: #5003C0;
+   color: var(--var-bright);
+   background-color: var(--var-blue);
    border: none;
    font-family: "montserrat";
    border-radius: 5px;
@@ -362,7 +379,7 @@ body {
  .param {
    font-size: 1.1rem;
    font-weight: 700;
-   color: #5003C0;
+   color: var(--var-blue);
  }
 
  .answer {
@@ -378,7 +395,7 @@ body {
 
  .data {
   margin-top:40px;
-
+ color: var(--var-dark);
  }
 
 }
@@ -399,7 +416,7 @@ body {
  }
 
  header p {
-    color: white;
+    color: var(--var-bright);
     font-weight: 600;
  }
 
@@ -412,6 +429,7 @@ body {
  .intro {
     font-family: "montserrat";
     font-size: clamp(2.3rem,5vw,5rem);
+     color: var(--var-dark);
  }
 
  .service {
@@ -436,8 +454,8 @@ body {
    padding: .5em .7em;
    font-size: clamp(.8rem,4.5vw,1.4rem);
    font-weight: bold;
-   color: white;
-   background-color: #5003C0;
+   color:var(--var-bright);
+   background-color: var(--var-blue);
    border: none;
    font-family: "montserrat";
    border-radius: 5px;
@@ -484,7 +502,7 @@ body {
  .param {
    font-size: 1.1rem;
    font-weight: 700;
-   color: #5003C0;
+   color: var(--var-blue);
  }
 
  .answer {
@@ -500,7 +518,7 @@ body {
 
  .data {
   margin-top:40px;
-
+ color: var(--var-dark);
  }
 
 }
@@ -520,7 +538,7 @@ body {
  }
 
  header p {
-    color: white;
+    color: var(--var-bright);
     font-weight: 600;
  }
 
@@ -533,6 +551,7 @@ body {
  .intro {
     font-family: "montserrat";
     font-size: clamp(2.3rem,5vw,5rem);
+     color: var(--var-dark);
  }
 
  .service {
@@ -557,8 +576,8 @@ body {
    padding: .5em .7em;
    font-size: clamp(.8rem,4.5vw,1.4rem);
    font-weight: bold;
-   color: white;
-   background-color: #5003C0;
+   color: var(--var-bright);
+   background-color: var(--var-blue);
    border: none;
    font-family: "montserrat";
    border-radius: 5px;
@@ -604,7 +623,7 @@ body {
  .param {
    font-size: 1.1rem;
    font-weight: 700;
-   color: #5003C0;
+   color: var(--var-blue);
  }
 
  .answer {
@@ -620,6 +639,6 @@ body {
 
  .data {
   margin-top:40px;
-
+  color: var(--var-dark);
  }
 }
