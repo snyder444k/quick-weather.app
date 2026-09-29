@@ -11,30 +11,28 @@
     <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-    <header>
-    <p>Quick<span>Weather</span><i class="fa-solid fa-cloud"></i></p>
-    <i class="fa-solid fa-sun" style=" cursor: pointer;" id="icon"></i>
-   </header>
-
+   
    <main>
-    <h1 class="intro">Quick <br> Weather</h1>
+    <h1 class="intro">Quick <br> <p> Weather</p></h1>
     <p class="service">Real time weather forecast.</p>
 
     <form action="/submit" method="post">
+      <div class="rounder">
   <input type="text" name="location" id="" class="location" placeholder="type in your location" required>
   <button type="submit" class="submit">Search</button>
+  </div>
     </form>
      <% if(locals.content){ %>
     <div class="output">
         <div class="first">
           <span class="doer">
             <p class="param">Location</p>
-            <p class="answer"><%= content.location %></p>
+            <p class="answer"><i class="fa-solid fa-location-dot"></i><%= content.location %></p>
           </span>
 
            <span class="doer">
            <p class="param">Temperature</p>
-            <p class="answer"><%= content.temperature%>˚C</p>
+            <p class="answer"><i class="fa-solid fa-temperature-half"></i><%= content.temperature%>˚C</p>
           </span>
 
           
@@ -56,7 +54,7 @@
           </span>
 
              <span class="doer">
-             <p class="param">Sunrise</p>
+             <p class="param set">Sunrise</p>
             <p class="answer"><%= content.sunrise %></p>
           </span>
 
