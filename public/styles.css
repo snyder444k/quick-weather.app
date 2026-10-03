@@ -2,6 +2,7 @@
 :root {
     --var-bright: white;
     --var-blue: #5003C0;
+    --var-blued: #5003C0;
     --var-dark:black;
     --var-darker:black;
 }
@@ -11,6 +12,7 @@
   --var-blue: white;
   --var-dark: white;
   --var-darker: red;
+  --var-blued: #5003C0;
 }
 
 *::before,*::after,*{
@@ -34,19 +36,20 @@ body {
 }
 
 #icon {
-  color: var(--var-bright);
+  color: white;
+  font-size: 1.8rem;
 }
    
  header {
-    background-color: var(--var-blue);
-    width: 90%;
-    max-width: 750px;
+    width: 95%;
+    max-width: 1200px;
     padding: 1rem;
-    margin: 2cqi auto;
+    margin: 2rem auto;
     border-radius: 12px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
+
  }
 
 .set {
@@ -60,12 +63,12 @@ body {
 
 
  main {
-    margin: 5% auto;
+    margin: 3% auto;
     text-align: center;
  }
  .intro {
     font-family: "montserrat";
-    font-size: clamp(4rem,5vw,5rem);
+    font-size: clamp(5rem,5.5vw,5.8rem);
      color: var(--var-dark);
      font-weight: bolder;
      
@@ -84,6 +87,7 @@ body {
     margin-top: 1rem;
     font-size: 1.2rem;
     color: rgb(225, 220, 220);
+    filter: brightness(150%);
  }
 
 
@@ -110,8 +114,8 @@ body {
    padding: .7em .7em;
    font-size: clamp(.8rem,4.5vw,1.1rem);
    font-weight: bold;
-   color: var(--var-bright);
-   background-color: var(--var-blue);
+   color:white;
+   background-color: var(--var-blued);
    border: none;
    font-family: "montserrat";
    border-radius: 5px;
@@ -205,7 +209,7 @@ body {
 
   
  header {
-    background-color: var(--var-blue);
+    
     width: 90%;
     padding: 1rem;
     margin: 5% auto;
@@ -269,10 +273,10 @@ body {
 
  .submit {
    padding: .7em .7em;
-   font-size: clamp(.8rem,4.5vw,1.1rem);
+    font-size: clamp(.8rem,4.5vw,1.1rem);
    font-weight: bold;
-   color: var(--var-bright);
-   background-color: var(--var-blue);
+   color:white;
+   background-color: var(--var-blued);
    border: none;
    font-family: "montserrat";
    border-radius: 5px;
@@ -374,7 +378,7 @@ body {
   
   
  header {
-    background-color: var(--var-blue);
+
     width: 90%;
     padding: 1rem;
     margin: 5% auto;
@@ -438,10 +442,10 @@ body {
 
  .submit {
    padding: .7em .7em;
-   font-size: clamp(.8rem,4.5vw,1.1rem);
+     font-size: clamp(.8rem,4.5vw,1.1rem);
    font-weight: bold;
-   color: var(--var-bright);
-   background-color: var(--var-blue);
+   color:white;
+   background-color: var(--var-blued);
    border: none;
    font-family: "montserrat";
    border-radius: 5px;
@@ -540,7 +544,7 @@ body {
 
   
  header {
-    background-color: var(--var-blue);
+
     width: 90%;
     padding: 1rem;
     margin: 5% auto;
@@ -604,10 +608,10 @@ body {
 
  .submit {
    padding: .7em .7em;
-   font-size: clamp(.8rem,4.5vw,1.1rem);
+    font-size: clamp(.8rem,4.5vw,1.1rem);
    font-weight: bold;
-   color: var(--var-bright);
-   background-color: var(--var-blue);
+   color:white;
+   background-color: var(--var-blued);
    border: none;
    font-family: "montserrat";
    border-radius: 5px;
@@ -705,7 +709,7 @@ body {
 @media (min-width:300px) and (max-width:399px) {
 
  header {
-    background-color: var(--var-blue);
+
     width: 90%;
     padding: 1rem;
     margin: 5% auto;
@@ -769,10 +773,10 @@ body {
 
  .submit {
    padding: .6em .6em;
-   font-size: clamp(.6rem,4vw,1.1em);
+   font-size: clamp(.8rem,4.5vw,1.1rem);
    font-weight: bold;
-   color: var(--var-bright);
-   background-color: var(--var-blue);
+   color:white;
+   background-color: var(--var-blued);
    border: none;
    font-family: "montserrat";
    border-radius: 5px;

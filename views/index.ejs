@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-   
+  <header>
+    <i class="fa-solid fa-sun" style=" cursor: pointer;" id="icon"></i>
+   </header>
    <main>
     <h1 class="intro">Quick <br> <p> Weather</p></h1>
     <p class="service">Real time weather forecast.</p>
@@ -75,7 +77,7 @@
 
 
 
-   <script>
+    <script>
         const icon = document.getElementById("icon");
       
         icon.onclick = function() {
@@ -83,9 +85,11 @@
             if(document.body.classList.contains("dark-theme")) {
                icon.classList.remove("fa-sun");
                icon.classList.add("fa-moon");
+               document.body.style.backgroundImage= "url('sunset.jpg')";
             } else {
               icon.classList.remove("fa-moon");
                icon.classList.add("fa-sun");
+               document.body.style.backgroundImage = "url('spalshy.jpg')"
             }
         }
    </script>
