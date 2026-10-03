@@ -49,7 +49,9 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-
+    position: sticky;
+    z-index: 1000;
+    top: 0;
  }
 
 .set {
